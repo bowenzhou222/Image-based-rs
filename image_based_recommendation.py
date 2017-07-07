@@ -310,25 +310,23 @@ def recommend(prefix, ssim_mode, random_recommendation, sp, length):
 category = ['Automotive_5', 'Baby_5', 'Beauty_5', 'Books_5',
             'CDs_and_Vinyl_5', 'Cell_Phones_and_Accessories_5', 'Clothing_Shoes_and_Jewelry_5', 'Digital_Music_5',
             'Electronics_5', 'Grocery_and_Gourmet_Food_5', 'Health_and_Personal_Care_5', 'Home_and_Kitchen_5',
-            'Kindle_Store_5', 'Movies_and_TV_5', 'Musical_Instruments_5', 'Office_Products_5', 'Pet_Supplies_5',
+            'Kindle_Store_5', 'Movies_and_TV_5', 'Musical_Instruments_5', 'Pet_Supplies_5',
             'Patio_Lawn_and_Garden', 'Sports_and_Outdoors_5',
             'Tools_and_Home_Improvement_5', 'Toys_and_Games_5', 'Video_Games_5']
 modes = ['ssim', 'cwssim']
 
-#prefix = 'Musical_Instruments_5'
-#ssim_mode = 'ssim'
-for length in [100,90,80,70,60,50,40,30,20,10]:
-    print(length)
-    for i in range(10):
-        for prefix in ['Musical_Instruments_5', 'Office_Products_5', 'Patio_Lawn_and_Garden_5']:
-            print(prefix.replace('_5', ''))
-            random_recommendation = True
-            sp = True
-            for ssim_mode in modes:
-                recommend(prefix, ssim_mode, random_recommendation, sp, length)
-                random_recommendation = False
-                sp = False
-        print('\n')
+length = 50
+
+for prefix in category:
+    print(prefix.replace('_5', ''))
+    random_recommendation = True
+    sp = True
+    for ssim_mode in modes:
+        recommend(prefix, ssim_mode, random_recommendation, sp, length)
+        random_recommendation = False
+        sp = False
+    print('')
+print('\n')
 
 
 
