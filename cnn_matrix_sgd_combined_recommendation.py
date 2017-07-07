@@ -370,22 +370,15 @@ category = ['Automotive_5', 'Baby_5', 'Beauty_5', 'Books_5',
             'Tools_and_Home_Improvement_5', 'Toys_and_Games_5', 'Video_Games_5']
 
 category = ['Musical_Instruments_5', 'Automotive_5', 'Digital_Music_5']
-prefix = 'Automotive_5'
 
+category = ['Musical_Instruments_5']
 for prefix in category:
-    '''l = []
-    for i in range(10, 110, 10):
-        l.append(i)
-    for i in range(150, 1050, 50):
-        l.append(i)'''
     print(prefix)
     for list_length in [100, 80, 60, 40, 20]:
         print(list_length)
         for f in [10, 20, 30, 50, 70, 90, 110, 150, 190]:
             print('Factor number\t', f)
-            for i in range(5):
-                # print(prefix.replace('_5', ''))
-                main(prefix, list_length, f)
+            main(prefix, list_length, f)
             print()
         print('\n')
 
