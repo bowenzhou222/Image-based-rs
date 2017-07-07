@@ -352,15 +352,15 @@ def main(prefix, list_length, factor_number):
         n += 1
     r.hit_ratio(user_number)
 
-category = ['Automotive_5', 'Baby_5', 'Beauty_5', 'Books_5',
+'''category = ['Automotive_5', 'Baby_5', 'Beauty_5', 'Books_5',
             'CDs_and_Vinyl_5', 'Cell_Phones_and_Accessories_5', 'Clothing_Shoes_and_Jewelry_5', 'Digital_Music_5',
             'Electronics_5', 'Grocery_and_Gourmet_Food_5', 'Health_and_Personal_Care_5', 'Home_and_Kitchen_5',
-            'Kindle_Store_5', 'Movies_and_TV_5', 'Musical_Instruments_5', 'Office_Products_5', 'Pet_Supplies_5',
+            'Kindle_Store_5', 'Movies_and_TV_5', 'Musical_Instruments_5', 'Pet_Supplies_5',
             'Patio_Lawn_and_Garden_5', 'Sports_and_Outdoors_5',
             'Tools_and_Home_Improvement_5', 'Toys_and_Games_5', 'Video_Games_5']
-category = ['Musical_Instruments_5', 'Automotive_5', 'Digital_Music_5']
-#prefix = 'Patio_Lawn_and_Garden_5'
-#for list_length in [100,90,80,70,60,50,40,30,20,10]:
+category = ['Musical_Instruments_5', 'Automotive_5', 'Digital_Music_5']'''
+
+category = ['Musical_Instruments_5']
 for prefix in category:
     '''l = []
     for i in range(10, 110, 10):
@@ -373,9 +373,7 @@ for prefix in category:
         #for f in l:
         for f in range(10, 210, 10):
             print('Factor number\t', f)
-            for i in range(5):
-                # print(prefix.replace('_5', ''))
-                main(prefix, list_length, f)
+            main(prefix, list_length, f)
             print()
         print('\n')
 
