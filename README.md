@@ -13,7 +13,20 @@ cwssim: #-items-recommended&nbsp;&nbsp;&nbsp;&nbsp;#-items-consumed&nbsp;&nbsp;&
 
 
 For CNN-feature-based recommendation, use cnn_feature_based_test_item_only_recommendation.py for KNN<br /><br />
+The output of CNN-feature-based recommendation has the following format:<br />
+length of recommendation list<br />
+Dataset name<br />
+Random: #-items-recommended&nbsp;&nbsp;&nbsp;&nbsp;#-items-consumed&nbsp;&nbsp;&nbsp;&nbsp;hit-ratio<br />
+CNN: #-items-recommended&nbsp;&nbsp;&nbsp;&nbsp;#-items-consumed&nbsp;&nbsp;&nbsp;&nbsp;hit-ratio<br />
+
+
+
+
+
+
 cnn_matrix_sgd_combined_recommendation.py for a mixed Matrix Factorization with CNN-feature-mapping recommendation<br /><br />
+
+
 cnn_ridge_factor_number_test.py uses ridge regression to map CNN features to the Matrix Factorization factors<br /><br />
 
 Datasets (images, reviews) required by this RS can be downloaded from http://jmcauley.ucsd.edu/data/amazon/
