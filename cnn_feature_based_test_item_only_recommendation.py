@@ -303,14 +303,13 @@ category = ['Automotive_5', 'Baby_5', 'Beauty_5', 'Books_5',
 
 category = ['Musical_Instruments_5', 'Patio_Lawn_and_Garden_5', 'Automotive_5',
             'Office_Products_5', 'Digital_Music_5', 'Baby_5']
-
-for list_length in [100,90,80,70,60,50,40,30,20,10]:
+category = ['Musical_Instruments_5']
+for list_length in range(100, 0, -10):
     print(list_length)
-    for i in range(5):
-        for prefix in category:
-            print(prefix.replace('_5', ''))
-            main(prefix, list_length)
-        print('\n')
+    for prefix in category:
+        print(prefix.replace('_5', ''))
+        main(prefix, list_length)
+    print('\n')
 
 
 
